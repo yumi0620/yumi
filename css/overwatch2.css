@@ -23,6 +23,13 @@
     color: #212121;
 }
 
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
 header {
     width: 100%;
     min-width: 1024px;
@@ -37,12 +44,16 @@ header div {
     display: flex;
 }
 
+.logomenu{
+    margin: 0 0 0 5%;
+}
+
 header a.logo {
     width: 165px;
     height: 61px;
     background: url(/yumi/img/overwatch2/logo3.png) no-repeat;
     background-size: contain;
-    margin: 0 0 0 50px;
+    margin: 0;
     display: block;
     text-indent: -9000px;
     overflow: hidden;
@@ -75,7 +86,7 @@ header .bt {
     border: 2px solid rgb(158, 158, 158);
     background: rgb(194, 194, 194);
     cursor: pointer;
-    margin: 0 50px 0 0;
+    margin: 0 5% 0 0;
     color: white;
     display: block;
     text-indent: -9000px;
@@ -97,7 +108,8 @@ header i.mmenu {
 }
 
 .nav .menu{
-    margin: 0px;
+    /* margin: 0px; */
+    margin: 0 0 0 5%;
 }
 
 .nav h2 {display: none;}
@@ -184,7 +196,7 @@ a { text-decoration: none; }
     border: 2px solid rgb(255, 102, 0);
     background: rgb(255, 124, 37);
     cursor: pointer;
-    margin: 15px 80px 15px 0;
+    margin: 15px 5% 15px 0;
     color: white;
 }
 
@@ -201,19 +213,22 @@ main >  .big{
     
 }
 
-main > p{
+main > .meinimgpail{
     width: 100%;
     height: 850px;
-    background: url(/yumi/img/overwatch2/mainimg.png) no-repeat ;
-    background-size: 100% 100%;
-    margin: 0 100px 0 0;
-    display: block;
-    text-indent: -9000px;
-    overflow: hidden;
+    /* background: url(/yumi/img/overwatch2/mainimg.png) no-repeat ;
+    background-size: 100% 100%; */
+    /* margin: 0 100px 0 0; */
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
-main >  p > .bt3{
+main > .meinimgpail img{
+    z-index: -2;
+}
+
+main >  .meinimgpail > .bt3{
     width: 186px;
     height: 58px;
     font-size: 20px;
@@ -395,6 +410,8 @@ main >  p > .bt3{
 .contents3 h2{
     font-size: 45px;
     color: white;
+    text-shadow: 1px 1px #052950,
+    2px 2px #031a33;
 }
 
 .contents3 > .bt4{
@@ -424,7 +441,7 @@ main >  p > .bt3{
 }
 
 .icon2{
-    background: url(/img/overwatch2/Attack.png) 50% 50% no-repeat;
+    background: url(/yumi/img/overwatch2/Attack.png) 50% 50% no-repeat;
     background-size: contain;
     border: none;
     display: block;
@@ -584,7 +601,7 @@ footer{
 }
 
 footer section{
-    width: 100%;
+    width: 1440px;
     height: 366px;
     display: flex;
     justify-content: center;
