@@ -14,7 +14,7 @@
     margin: 0;
     box-sizing: border-box;
     word-break: keep-all;
-    outline: 1px solid rosybrown;
+    /* outline: 1px solid rosybrown; */
 }
 
 :root {
@@ -79,21 +79,30 @@ header .menu {
     align-items: center;
 }
 
-header .bt {
+header .bts{
+    margin: 0 5% 0 0;
+}
+
+
+header .bts .bt {
     font-size: 24px;
     padding: 5px 22px;
     border-radius: 100px;
     border: 2px solid rgb(158, 158, 158);
     background: rgb(194, 194, 194);
     cursor: pointer;
-    margin: 0 5% 0 0;
     color: white;
     display: block;
     text-indent: -9000px;
     overflow: hidden;
 }
 
-header i.mmenu {
+header .bt:hover{
+    background: rgb(216, 216, 216);
+}
+
+header i.mmenu,
+header .bt1{
     display: none;
 }
 
@@ -129,11 +138,14 @@ a { text-decoration: none; }
 .mainmenu{
     display: flex;
     margin: 0 0 200px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
 }
 .mainmenu > li {
-    width: 120px; 
+    width: 140px; 
     text-align: center;
-    flex: 1 0 120px;
+    flex: 1 0 140px;
     margin: 25px 8px 10px 8px;
     
 }
@@ -157,7 +169,7 @@ a { text-decoration: none; }
 
 .mainmenu > li > a:hover {
     border-radius: 0;
-    background: rgb(200, 223, 247);
+    background: rgb(189, 212, 236);
 }
 
 .mainmenu .submenu > li > a {
@@ -200,18 +212,23 @@ a { text-decoration: none; }
     color: white;
 }
 
+.nav .bt2:hover{
+    background: rgb(255, 137, 58);
+}
+
 section i.mmmenu {
     display: none;
 }
 
 main{
     width: 100%;
+    min-width: 1024px;
 }
 
-main >  .big{
+/* main >  .big{
     width: 100%;
     
-}
+} */
 
 main > .meinimgpail{
     width: 100%;
@@ -225,6 +242,8 @@ main > .meinimgpail{
 }
 
 main > .meinimgpail img{
+    width: 100%;
+    
     z-index: -2;
 }
 
@@ -242,6 +261,10 @@ main >  .meinimgpail > .bt3{
     position: absolute;
     bottom: 10%;
     left: 46%;
+}
+
+main >  .meinimgpail > .bt3:hover{
+    background: rgb(255, 137, 58);
 }
 
 .inner{
@@ -324,6 +347,11 @@ main >  .meinimgpail > .bt3{
     right: 0;
     bottom: 1px;
 }
+
+.contents2 .cons button:hover{
+    background: rgb(255, 137, 58);
+}
+
 
 .contents2 .cons2{
     width: 100%;
