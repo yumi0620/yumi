@@ -223,6 +223,10 @@ section i.mmmenu {
 main{
     width: 100%;
     min-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* main >  .big{
@@ -231,19 +235,13 @@ main{
 } */
 
 main > .meinimgpail{
-    width: 100%;
+    width: 1940px;
     height: 850px;
-    /* background: url(/yumi/img/overwatch2/mainimg.png) no-repeat ;
-    background-size: 100% 100%; */
-    /* margin: 0 100px 0 0; */
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
 main > .meinimgpail img{
     width: 100%;
-    
     z-index: -2;
 }
 
